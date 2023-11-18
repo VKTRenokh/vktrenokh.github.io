@@ -1,4 +1,4 @@
-import { Container, Box, Heading, Text, useColorModeValue } from "@chakra-ui/react"
+import { Container, Box, Heading, Text } from "@chakra-ui/react"
 import { ThingsILove } from "../../components/things-i-love/things-i-love"
 import { Section } from "../../components/section/section"
 import { Bio } from "../../components/bio/bio"
@@ -10,7 +10,7 @@ import { contacts } from "../../constants/contacts"
 export const Home: FC = () => {
   return (
     <Container>
-      <Box borderRadius="lg" mb={6} p={3} textAlign="center" bg={useColorModeValue("tealAlpha.500", "whiteAlpha.200")}>
+      <Box borderRadius="lg" mb={6} p={3} textAlign="center" >
         <Heading mt={100} mb={5} variant="page-title" as="h2">Hello, i'm Victor Yenokh</Heading>
         <Text>Software engineer</Text>
       </Box>
