@@ -1,4 +1,4 @@
-import { Container, Box, Heading, Text, Link, useColorModeValue } from "@chakra-ui/react"
+import { Container, Box, Heading, Text, useColorModeValue } from "@chakra-ui/react"
 import { ThingsILove } from "../../components/things-i-love/things-i-love"
 import { Section } from "../../components/section/section"
 import { TextImportant } from "../../components/text-important/text-important"
