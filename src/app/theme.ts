@@ -8,12 +8,11 @@ const styles = {
   }),
 };
 
-const config = {
-  initialColorMode: "dark",
-};
-
 export const theme = extendTheme({
-  config,
+  config: {
+    initialColorMode: "dark",
+    useSystemColorMode: true,
+  },
   styles,
   fonts: {
     heading: "Fira Code",
