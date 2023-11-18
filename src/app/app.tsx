@@ -2,7 +2,6 @@ import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react"
 import { RouterProvider } from "react-router-dom"
 import { theme } from './theme'
 import { router } from "./app-routing"
-import "../styles/style.css"
 import { Header } from "./components/header/header"
 
 export const App = () => {
