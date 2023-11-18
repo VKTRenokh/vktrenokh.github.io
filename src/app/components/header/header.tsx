@@ -1,12 +1,13 @@
-import { Box, Container, Stack, Link, useColorModeValue } from "@chakra-ui/react"
+import { Box, Container, Stack, useColorModeValue } from "@chakra-ui/react"
 import { FC } from "react";
 import { HeaderLink } from "../header-link/header-link";
-import { FaGithub } from "react-icons/fa";
-import { githubLink } from "../../constants/links";
+import { ThemeToggle } from "../theme-toggle/theme-toggle";
 
 const links = [{ name: 'home', path: '/' }, { name: "projects", path: '/projects' }]
 
 export const Header: FC = () => {
+
+
   return (
     <Box position={"fixed"} as="header" w="100%" bg={useColorModeValue('#ffffff40', '#20202380')} css={{ backdropFilter: 'blur(10px)' }}>
       <Container display="flex" p={2} maxW={"container.md"} flexWrap="wrap" alignItems="center" justifyContent={"space-between"}>
@@ -22,10 +23,7 @@ export const Header: FC = () => {
             return <HeaderLink key={link.path} href={`#${link.path}`} target="_self">{link.name}</HeaderLink>
           })}
         </Stack>
-
-        <Link href={githubLink}>
-          <FaGithub></FaGithub>
-        </Link>
+        <ThemeToggle></ThemeToggle>
       </Container>
     </Box>
   )
