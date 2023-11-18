@@ -12,7 +12,7 @@ export const Bio: FC = () => {
   return (
     <>
       <Text>
-        <TextImportant onClick={handleBirthClick}>{birthDate}</TextImportant>
+        <TextImportant style={{ cursor: 'pointer' }} onClick={handleBirthClick}>{birthDate}</TextImportant>
         Born in Sevastopol, Crimea
       </Text>
       <Text>
