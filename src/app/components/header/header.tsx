@@ -1,6 +1,8 @@
-import { Box, Container, Stack, useColorModeValue } from "@chakra-ui/react"
+import { Box, Container, Stack, Link, useColorModeValue } from "@chakra-ui/react"
 import { FC } from "react";
 import { HeaderLink } from "../header-link/header-link";
+import { FaGithub } from "react-icons/fa";
+import { githubLink } from "../../constants/links";
 
 const links = [{ name: 'home', path: '/' }, { name: "projects", path: '/projects' }]
 
@@ -20,6 +22,10 @@ export const Header: FC = () => {
             return <HeaderLink key={link.path} href={`#${link.path}`} target="_self">{link.name}</HeaderLink>
           })}
         </Stack>
+
+        <Link href={githubLink}>
+          <FaGithub></FaGithub>
+        </Link>
       </Container>
     </Box>
   )

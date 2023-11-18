@@ -1,5 +1,6 @@
 import { IconType } from "react-icons";
 import { FaDiscord, FaGithub, FaTelegram } from "react-icons/fa";
+import { discordLink, githubLink, telegramLink } from "./links";
 
 export interface Contact {
   icon: IconType;
@@ -11,16 +12,16 @@ export const contacts: Contact[] = [
   {
     icon: FaTelegram,
     name: "Telegram",
-    link: "https://t.me/vktrenokh",
+    link: telegramLink,
   },
   {
     icon: FaDiscord,
     name: "Discord",
-    link: "https://discordapp.com/users/882968599877287996",
+    link: discordLink,
   },
   {
     icon: FaGithub,
     name: "Github",
-    link: "https://github.com/vktrenokh",
+    link: githubLink,
   },
 ];

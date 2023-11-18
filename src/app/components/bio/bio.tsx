@@ -1,12 +1,18 @@
 import { Text, Link } from "@chakra-ui/react"
 import { TextImportant } from "../text-important/text-important"
-import { FC } from "react"
+import { FC, useState } from "react"
 
 export const Bio: FC = () => {
+  const [birthDate, setBirthDate] = useState<'2010' | '23 June 2010'>('2010')
+
+  const handleBirthClick = () => {
+    setBirthDate(birthDate === '2010' ? '23 June 2010' : '2010')
+  }
+
   return (
     <>
       <Text>
-        <TextImportant>2010</TextImportant>
+        <TextImportant onClick={handleBirthClick}>{birthDate}</TextImportant>
         Born in Sevastopol, Crimea
       </Text>
       <Text>
