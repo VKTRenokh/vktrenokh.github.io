@@ -11,7 +11,7 @@ export const ThingsILove: FC<Props> = ({ things }) => {
     <List spacing={3}>
       {things.map(thing => {
         return (
-          <ListItem >
+          <ListItem key={thing}>
             <ListIcon color={'grassTeal'} as={IoHeartOutline}></ListIcon>
             {thing}
           </ListItem>

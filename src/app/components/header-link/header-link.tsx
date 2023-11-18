@@ -8,7 +8,7 @@ interface Props {
 }
 
 export const HeaderLink: FC<Props> = ({ href, children, target }: Props) => {
-  return (<Link href={href} p={2} color="teal" target={target}>
+  return (<Link href={href} p={2} target={target}>
     {children}
   </Link>)
 }

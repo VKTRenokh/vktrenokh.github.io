@@ -17,7 +17,7 @@ export const Header: FC = () => {
           mt={{ base: 4, md: 0 }}
         >
           {links.map(link => {
-            return <HeaderLink href={`#${link.path}`} target="_self">{link.name}</HeaderLink>
+            return <HeaderLink key={link.path} href={`#${link.path}`} target="_self">{link.name}</HeaderLink>
           })}
         </Stack>
       </Container>

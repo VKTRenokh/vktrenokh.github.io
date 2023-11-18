@@ -1,1 +1,8 @@
-export const thingsThatILove = ["Music", "Coding"];
+export const thingsThatILove = [
+  "Music",
+  "Coding",
+  "Chess",
+  "Plants",
+  "Keyboards",
+  "Neovim",
+];

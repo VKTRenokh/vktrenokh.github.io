@@ -1,11 +1,13 @@
 import { Container, Box, Heading, Text, useColorModeValue } from "@chakra-ui/react"
 import { ThingsILove } from "../../components/things-i-love/things-i-love"
 import { Section } from "../../components/section/section"
-import { TextImportant } from "../../components/text-important/text-important"
-import * as React from "react"
+import { Bio } from "../../components/bio/bio"
+import { WaysToReachMe } from "../../components/ways-to-reach-me/ways-to-reach-me"
+import { FC } from 'react'
 import { thingsThatILove } from "../../constants/thingThatILove"
+import { contacts } from "../../constants/contacts"
 
-export const Home: React.FC = () => {
+export const Home: FC = () => {
   return (
     <Container>
       <Box borderRadius="lg" mb={6} p={3} textAlign="center" bg={useColorModeValue("tealAlpha.500", "whiteAlpha.200")}>
@@ -14,22 +16,15 @@ export const Home: React.FC = () => {
       </Box>
       <Section delay="0.1">
         <Heading as="h3" variant='section-title'>Bio</Heading>
-        <Text>
-          <TextImportant>2010</TextImportant>
-          Born in Sevastopol, Crimea
-        </Text>
-        <Text>
-          <TextImportant>2022</TextImportant>
-          Started rsschool courses
-        </Text>
-        <Text>
-          <TextImportant>2023</TextImportant>
-          Finished rsschool courses
-        </Text>
+        <Bio />
       </Section>
       <Section delay="0.2">
         <Heading as="h3" variant='section-title'>I love</Heading>
-        <ThingsILove things={thingsThatILove}></ThingsILove>
+        <ThingsILove things={thingsThatILove} />
+      </Section>
+      <Section delay="0.3">
+        <Heading as='h3' variant='section-title'>Ways To Reach Me</Heading>
+        <WaysToReachMe contacts={contacts}></WaysToReachMe>
       </Section>
     </Container>
   )
