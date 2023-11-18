@@ -1,6 +1,6 @@
 # Vktrenokh's Homepage
 
-[https://vktrenokh.duckdns.org](https://vktrenokh.duckdns.org)
+[Deploy](https://vktrenokh.github.io)
 
 ## Stack
 - [React](https://react.dev) - React library
