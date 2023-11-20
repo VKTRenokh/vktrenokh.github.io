@@ -2,6 +2,7 @@ import { Box, Container, Stack, useColorModeValue } from "@chakra-ui/react"
 import { FC } from "react";
 import { HeaderLink } from "../header-link/header-link";
 import { ThemeToggle } from "../theme-toggle/theme-toggle";
+import { Burger } from "../burger/burger";
 
 const links = [{ name: 'home', path: '/' }, { name: 'configs', path: '/dotfiles' }]
 
@@ -22,7 +23,10 @@ export const Header: FC = () => {
           })}
         </Stack>
         <ThemeToggle></ThemeToggle>
-      </Container>
-    </Box>
+        <Box ml={2} display={{ base: 'inline-block', md: "none" }}>
+          <Burger links={links} />
+        </Box>
+      </Container >
+    </Box >
   )
 }
