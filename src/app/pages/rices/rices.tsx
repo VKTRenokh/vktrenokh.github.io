@@ -9,7 +9,7 @@ export const Rices: FC = () => {
       <Box mb={6} p={3} textAlign="center">
         <Heading mt={100} mb={5} variant="page-title" as="h2">Rices</Heading>
         <Text>
-          <Link href="https://github.com/vktrenokh/dotfiles">Dotfiles</Link>
+          Dotfiles <Link href="https://github.com/vktrenokh/dotfiles">here</Link>
         </Text>
       </Box>
       <Hyprland></Hyprland>
