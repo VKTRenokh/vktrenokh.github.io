@@ -3,7 +3,7 @@ import { Hyprland } from "@/app/components/hyprland/hyprland"
 import { Sway } from "@/app/components/sway/sway"
 import { FC } from "react"
 
-export const Rices: FC = () => {
+export const Component: FC = () => {
   return (
     <Container>
       <Box mb={6} p={3} textAlign="center">

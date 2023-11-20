@@ -7,7 +7,7 @@ import { FC } from 'react'
 import { thingsThatILove } from "../../constants/thingThatILove"
 import { contacts } from "../../constants/contacts"
 
-export const Home: FC = () => {
+export const Component: FC = () => {
   return (
     <Container>
       <Box mb={6} p={3} textAlign="center" >
