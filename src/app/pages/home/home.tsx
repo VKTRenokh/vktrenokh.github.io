@@ -10,7 +10,7 @@ import { contacts } from "../../constants/contacts"
 export const Home: FC = () => {
   return (
     <Container>
-      <Box borderRadius="lg" mb={6} p={3} textAlign="center" >
+      <Box mb={6} p={3} textAlign="center" >
         <Heading mt={100} mb={5} variant="page-title" as="h2">Hello, i'm Victor Yenokh</Heading>
         <Text>Software engineer</Text>
       </Box>
