@@ -5,6 +5,8 @@ import { FC } from "react"
 interface Props {
   src: string
   alt?: string
+  width: string
+  height: string
 }
 
 export const ConfigImage: FC<Props> = ({ src, alt }) => {
