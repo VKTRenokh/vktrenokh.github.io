@@ -12,7 +12,7 @@ export const Component: FC = () => {
     <Container>
       <Box mb={6} p={3} textAlign="center" >
         <Heading mt={100} mb={5} variant="page-title" as="h2">Hello, i'm Victor Yenokh</Heading>
-        <Text>Software engineer, Keyboard enthusiast</Text>
+        <Text>Software engineer</Text>
       </Box>
       <Section delay="0.1">
         <Heading as="h3" variant='section-title'>Bio</Heading>
