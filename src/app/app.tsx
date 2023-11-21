@@ -1,11 +1,15 @@
 import { RouterProvider } from "react-router-dom"
-import { Header } from "./components/header/header"
 import { router } from "./app-routing"
+import { lazy, Suspense } from "react"
+
+const Header = lazy(() => import('@/app/components/header/header'))
 
 export const App = () => {
   return (
     <>
-      <Header></Header>
+      <Suspense>
+        <Header></Header>
+      </Suspense>
       <RouterProvider router={router}></RouterProvider>
     </>
   )

@@ -6,7 +6,7 @@ import { Burger } from "../burger/burger";
 
 const links = [{ name: 'home', path: '/' }, { name: 'configs', path: '/dotfiles' }]
 
-export const Header: FC = () => {
+const Header: FC = () => {
   return (
     <Box position={"fixed"} as="header" w="100%" bg={useColorModeValue('#ffffff40', '#20202380')} css={{ backdropFilter: 'blur(10px)' }} zIndex={20}>
       <Container display="flex" p={2} maxW={"container.md"} flexWrap="wrap" alignItems="center" justifyContent={"space-between"}>
@@ -30,3 +30,5 @@ export const Header: FC = () => {
     </Box >
   )
 }
+
+export default Header
