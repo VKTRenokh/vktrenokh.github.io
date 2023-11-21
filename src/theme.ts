@@ -27,7 +27,7 @@ const components = {
   },
   Link: {
     baseStyle: (props: StyleFunctionProps) => ({
-      color: mode("teal", "#f4d35e")(props),
+      color: mode("teal", "#ff63c3")(props),
       textUnderlineOffset: 3,
     }),
   },
@@ -39,7 +39,6 @@ const colors = {
 
 export const theme = extendTheme({
   config: {
-    initialColorMode: "dark",
     useSystemColorMode: true,
   },
   colors,
