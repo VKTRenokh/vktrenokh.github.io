@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { List } from "@chakra-ui/react";
-import { Contact } from "../../constants/contacts";
 import { ContactLink } from "../contact-link/contact-link";
+import { Contact } from "@/app/constants/contacts";
 
 interface Props {
   contacts: Contact[]

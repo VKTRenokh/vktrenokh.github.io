@@ -1,11 +1,11 @@
 import { Container, Box, Heading, Text, Link } from "@chakra-ui/react"
-import { ThingsILove } from "../../components/things-i-love/things-i-love"
-import { Section } from "../../components/section/section"
-import { Bio } from "../../components/bio/bio"
-import { WaysToReachMe } from "../../components/ways-to-reach-me/ways-to-reach-me"
 import { FC } from 'react'
 import { thingsThatILove } from "../../constants/thingThatILove"
 import { contacts } from "../../constants/contacts"
+import { Section } from "@/app/components/section/section"
+import { Bio } from "./components/bio/bio"
+import { WaysToReachMe } from "./components/ways-to-reach-me/ways-to-reach-me"
+import { ThingsILove } from "./components/things-i-love/things-i-love"
 
 export const Component: FC = () => {
   return (

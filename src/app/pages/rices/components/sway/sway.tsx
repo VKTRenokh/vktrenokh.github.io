@@ -1,9 +1,9 @@
 import { FC } from "react"
-import { Section } from "../section/section"
 import { Heading } from "@chakra-ui/react"
 import { ConfigImage } from "../config-image/config-image/config-image"
 import sway from "@/assets/sway.webp"
 import swaySecond from "@/assets/sway-1.webp"
+import { Section } from "@/app/components/section/section"
 
 export const Sway: FC = () => {
   return (

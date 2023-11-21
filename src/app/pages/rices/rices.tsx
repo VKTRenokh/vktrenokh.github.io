@@ -1,7 +1,7 @@
 import { Container, Box, Heading, Text, Link } from "@chakra-ui/react"
-import { Hyprland } from "@/app/components/hyprland/hyprland"
-import { Sway } from "@/app/components/sway/sway"
 import { FC } from "react"
+import { Hyprland } from "./components/hyprland/hyprland"
+import { Sway } from "./components/sway/sway"
 
 export const Component: FC = () => {
   return (

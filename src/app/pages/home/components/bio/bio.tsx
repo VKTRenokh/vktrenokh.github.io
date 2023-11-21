@@ -1,5 +1,5 @@
+import { TextImportant } from "@/app/components/text-important/text-important"
 import { Text, Link } from "@chakra-ui/react"
-import { TextImportant } from "../text-important/text-important"
 import { FC, useState } from "react"
 
 export const Bio: FC = () => {

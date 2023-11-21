@@ -1,10 +1,10 @@
 import { Heading } from "@chakra-ui/react"
 import { ConfigImage } from "../config-image/config-image/config-image"
-import { Section } from "../section/section"
 import { FC } from "react"
 import hyprland from "@/assets/hyprland.webp"
 import hyprlandSecond from "@/assets/hyprland-1.webp"
 import hyprlandThird from "@/assets/hyprland-2.webp"
+import { Section } from "@/app/components/section/section"
 
 export const Hyprland: FC = () => {
   return (
