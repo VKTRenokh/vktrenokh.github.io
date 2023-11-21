@@ -2,14 +2,6 @@ import { extendTheme, StyleFunctionProps } from "@chakra-ui/react";
 import "@fontsource/fira-code";
 import { mode } from "@chakra-ui/theme-tools";
 
-const styles = {
-  global: (props: StyleFunctionProps) => ({
-    body: {
-      bg: mode("#ffffff", "#202023")(props),
-    },
-  }),
-};
-
 const components = {
   Heading: {
     variants: {
@@ -52,7 +44,6 @@ export const theme = extendTheme({
   },
   colors,
   components,
-  styles,
   fonts: {
     heading: "Fira Code",
     body: "Fira Code",
